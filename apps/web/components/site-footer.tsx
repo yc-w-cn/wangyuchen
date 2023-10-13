@@ -1,6 +1,6 @@
 export default function SiteFooter() {
   return (
-    <footer className="rounded-lg bg-white shadow dark:bg-gray-800">
+    <footer className="sticky bottom-0 rounded-lg bg-white shadow dark:bg-gray-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <a
           href="https://beian.miit.gov.cn/"
