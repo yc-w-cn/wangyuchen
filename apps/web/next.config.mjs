@@ -1,10 +1,15 @@
+import { withContentlayer } from "next-contentlayer"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   reactStrictMode: true,
   experimental: {
     appDir: true,
   },
+  images: {
+    unoptimized: true, // export required
+  },
 }
 
-export default nextConfig
+export default withContentlayer(nextConfig)
