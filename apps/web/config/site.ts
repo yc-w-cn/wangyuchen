@@ -1,13 +1,25 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Yuchen Wang",
+  name: "YC.W",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "王雨辰，毕业于上海财经大学，是一名全栈软件工程师。",
   mainNav: [
     {
-      title: "Home",
+      title: "首页",
       href: "/",
+    },
+    {
+      title: "博客",
+      href: "/blog",
+    },
+    {
+      title: "合作",
+      href: "/contact",
+    },
+    {
+      title: "关于我",
+      href: "/about",
     },
   ],
   links: {
