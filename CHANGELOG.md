@@ -2,8 +2,6 @@
 
 ## [0.0.2] - 2023-10-15
 
-First Release Version.
-
 ### Added
 
 - Google Analytics
