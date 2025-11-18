@@ -1,3 +1,6 @@
-packages:
-  - 'apps/*'
-  - 'packages/*'
+onlyBuiltDependencies:
+  - contentlayer
+  - esbuild
+  - protobufjs
+  - sharp
+  - unrs-resolver
