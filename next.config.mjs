@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 
+import createMDX from '@next/mdx';
 import dayjs from 'dayjs';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
@@ -29,4 +30,16 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  extension: /\.(md|mdx)$/,
+  // Optionally provide remark and rehype plugins
+  options: {
+    // If you use remark-gfm, you'll need to use next.config.mjs
+    // as the package is ESM only
+    // https://github.com/remarkjs/remark-gfm#install
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
+export default withMDX(nextConfig);
