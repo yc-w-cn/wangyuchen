@@ -13,6 +13,10 @@ const packageInfo = JSON.parse(
 const nextConfig = {
   output: isDevelopment ? 'standalone' : 'export',
 
+  images: {
+    unoptimized: !isDevelopment,
+  },
+
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   trailingSlash: false,
 
